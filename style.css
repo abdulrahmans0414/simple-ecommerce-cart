@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the products and cart */
+.container {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title styling */
+h1,
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* Product List */
+#product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Product Item */
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Add to cart button */
+.add-to-cart {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #a020f0;
+}
+
+/* Shopping Cart */
+#cart-item {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #222;
+  border-radius: 8px;
+}
+
+/* Total price section */
+#cart-total {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+/* Checkout Button */
+#checkout-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .product {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+  }
+}
